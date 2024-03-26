@@ -3,9 +3,9 @@ import logging
 import re
 from typing import List, Sequence, Union
 
-from langchain.agents.agent import MultiActionAgentOutputParser
 from langchain_core.agents import AgentAction, AgentFinish
 from langchain_core.language_models import BaseLanguageModel
+from langchain_core.output_parsers import BaseOutputParser
 from langchain_core.prompts.chat import ChatPromptTemplate
 from langchain_core.runnables import Runnable, RunnablePassthrough
 from langchain_core.tools import BaseTool
@@ -45,7 +45,9 @@ def create_cohere_multi_hop_agent(
     return agent
 
 
-class CohereToolsMultiHopAgentOutputParser(MultiActionAgentOutputParser):
+class CohereToolsMultiHopAgentOutputParser(
+    BaseOutputParser[Union[List[AgentAction], AgentFinish]]
+):
     """Parses a message into agent actions/finish."""
 
     @property
