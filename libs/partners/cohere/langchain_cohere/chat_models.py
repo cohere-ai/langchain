@@ -361,9 +361,9 @@ class ChatCohere(BaseChatModel, BaseCohere):
             ]
         )
 
-    def get_num_tokens(self, text: str) -> int:
+    def get_num_tokens(self, text: str, model: str) -> int:
         """Calculate number of tokens."""
-        return len(self.client.tokenize(text=text).tokens)
+        return len(self.client.tokenize(text=text, model=model).tokens)
 
 
 def _format_cohere_tool_calls(
