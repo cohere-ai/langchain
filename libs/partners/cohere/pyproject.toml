@@ -28,6 +28,7 @@ pytest-asyncio = "^0.21.1"
 langchain-core = { path = "../../core", develop = true }
 langchain-community = { path = "../../community", develop = true }
 langchain = { path = "../../langchain", develop = true }
+pytest-vcr = "^1.0.2"
 
 [tool.poetry.group.codespell]
 optional = true
@@ -90,5 +91,6 @@ markers = [
   "requires: mark tests as requiring a specific library",
   "asyncio: mark tests as requiring asyncio",
   "compile: mark placeholder test used to compile integration tests without running them",
+  "vcr: mark placeholder test used to compile integration tests without running them",
 ]
 asyncio_mode = "auto"
