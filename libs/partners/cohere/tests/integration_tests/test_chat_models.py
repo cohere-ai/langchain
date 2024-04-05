@@ -1,15 +1,24 @@
-"""Test ChatCohere chat model."""
+"""
+Test ChatCohere chat model implementation.
+
+Uses the replay testing functionality, so you don't need an API key to run these tests.
+https://python.langchain.com/docs/contributing/testing#recording-http-interactions-with-pytest-vcr
+
+When re-recording these tests you will need to set COHERE_API_KEY.
+"""
 
 import json
 from typing import Any
 
 import pytest
+
 from langchain_core.messages import AIMessage, AIMessageChunk
 from langchain_core.pydantic_v1 import BaseModel, Field
 
 from langchain_cohere import ChatCohere
 
 
+@pytest.mark.vcr()
 def test_stream() -> None:
     """Test streaming tokens from ChatCohere."""
     llm = ChatCohere()
@@ -18,6 +27,7 @@ def test_stream() -> None:
         assert isinstance(token.content, str)
 
 
+@pytest.mark.vcr()
 async def test_astream() -> None:
     """Test streaming tokens from ChatCohere."""
     llm = ChatCohere()
@@ -27,7 +37,7 @@ async def test_astream() -> None:
 
 
 async def test_abatch() -> None:
-    """Test streaming tokens from ChatCohere."""
+    """Test streaming tokens from ChatCohere"""
     llm = ChatCohere()
 
     result = await llm.abatch(["I'm Pickle Rick", "I'm not Pickle Rick"])
@@ -46,6 +56,7 @@ async def test_abatch_tags() -> None:
         assert isinstance(token.content, str)
 
 
+@pytest.mark.vcr()
 def test_batch() -> None:
     """Test batch tokens from ChatCohere."""
     llm = ChatCohere()
@@ -63,6 +74,7 @@ async def test_ainvoke() -> None:
     assert isinstance(result.content, str)
 
 
+@pytest.mark.vcr()
 def test_invoke() -> None:
     """Test invoke tokens from ChatCohere."""
     llm = ChatCohere()
@@ -71,6 +83,7 @@ def test_invoke() -> None:
     assert isinstance(result.content, str)
 
 
+@pytest.mark.vcr()
 def test_invoke_tool_calls() -> None:
     llm = ChatCohere(temperature=0)
 
@@ -94,6 +107,7 @@ def test_invoke_tool_calls() -> None:
     }
 
 
+@pytest.mark.vcr()
 def test_streaming_tool_call() -> None:
     llm = ChatCohere(temperature=0)
 

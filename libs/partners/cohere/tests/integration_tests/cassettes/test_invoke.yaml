@@ -1,0 +1,73 @@
+interactions:
+- request:
+    body: '{"message": "I''m Pickle Rick", "stream": false, "chat_history": []}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '67'
+      content-type:
+      - application/json
+      host:
+      - api.cohere.ai
+      user-agent:
+      - python-httpx/0.27.0
+      x-client-name:
+      - langchain
+      x-fern-language:
+      - Python
+      x-fern-sdk-name:
+      - cohere
+      x-fern-sdk-version:
+      - 5.1.7
+    method: POST
+    uri: https://api.cohere.ai/v1/chat
+  response:
+    body:
+      string: '{"response_id":"ad2712be-d161-4975-862b-05d4f4d39be3","text":"Wow!
+        It''s Pickle Rick! What brings you here? Are you looking for more adventures
+        or just taking a break from pickling?","generation_id":"41442cb0-4279-4591-992a-6a92174729d9","chat_history":[{"role":"USER","message":"I''m
+        Pickle Rick"},{"role":"CHATBOT","message":"Wow! It''s Pickle Rick! What brings
+        you here? Are you looking for more adventures or just taking a break from
+        pickling?"}],"finish_reason":"COMPLETE","token_count":{"prompt_tokens":70,"response_tokens":27,"total_tokens":97,"billed_tokens":31},"meta":{"api_version":{"version":"1"},"billed_units":{"input_tokens":4,"output_tokens":27}}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Length:
+      - '660'
+      Via:
+      - 1.1 google
+      access-control-expose-headers:
+      - X-Debug-Trace-ID
+      cache-control:
+      - no-cache, no-store, no-transform, must-revalidate, private, max-age=0
+      content-type:
+      - application/json
+      date:
+      - Fri, 05 Apr 2024 09:31:44 GMT
+      expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      num_chars:
+      - '430'
+      num_tokens:
+      - '31'
+      pragma:
+      - no-cache
+      server:
+      - envoy
+      vary:
+      - Origin
+      x-accel-expires:
+      - '0'
+      x-debug-trace-id:
+      - 25f48bef6a8df5a826e8c90863ef0afb
+      x-envoy-upstream-service-time:
+      - '538'
+    status:
+      code: 200
+      message: OK
+version: 1
