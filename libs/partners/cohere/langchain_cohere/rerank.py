@@ -22,7 +22,7 @@ class CohereRerank(BaseDocumentCompressor):
     cohere_api_key: Optional[str] = None
     """Cohere API key. Must be specified directly or via environment variable 
         COHERE_API_KEY."""
-    user_agent: str = "langchain"
+    user_agent: str = "langchain:partner"
     """Identifier for the application making the request."""
 
     class Config:
@@ -31,7 +31,7 @@ class CohereRerank(BaseDocumentCompressor):
         extra = Extra.forbid
         arbitrary_types_allowed = True
 
-    @root_validator(pre=True)
+    @root_validator()
     def validate_environment(cls, values: Dict) -> Dict:
         """Validate that api key and python package exists in environment."""
         if not values.get("client"):

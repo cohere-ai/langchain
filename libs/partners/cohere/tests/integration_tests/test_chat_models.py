@@ -14,6 +14,7 @@ import pytest
 
 from langchain_core.messages import AIMessage, AIMessageChunk
 from langchain_core.pydantic_v1 import BaseModel, Field
+from langchain_core.tools import tool
 
 from langchain_cohere import ChatCohere
 
@@ -134,6 +135,37 @@ def test_streaming_tool_call() -> None:
         "name": "Erick",
         "age": 27,
     }
+
+
+@pytest.mark.vcr()
+def test_invoke_multiple_tools() -> None:
+    llm = ChatCohere(temperature=0)
+
+    @tool
+    def add_two_numbers(a: int, b: int) -> int:
+        """Add two numbers together"""
+        return a + b
+
+    @tool
+    def capital_cities(country: str) -> str:
+        """Returns the capital city of a country"""
+        return "France"
+
+    tool_llm = llm.bind_tools([add_two_numbers, capital_cities])
+
+    result = tool_llm.invoke("What is the capital of France")
+    print(result)
+
+    assert isinstance(result, AIMessage)
+    additional_kwargs = result.additional_kwargs
+    assert "tool_calls" in additional_kwargs
+    assert len(additional_kwargs["tool_calls"]) == 1
+    assert (
+            additional_kwargs["tool_calls"][0]["function"]["name"]
+            == "capital_cities"
+    )
+    parameters = json.loads(additional_kwargs["tool_calls"][0]["function"]["arguments"])
+    assert {"country": "France"} == parameters
 
 
 @pytest.mark.xfail(

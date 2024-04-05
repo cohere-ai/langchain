@@ -19,7 +19,7 @@ interactions:
       tools to help you, which you use to research your answer. You may need to use
       multiple tools in parallel or sequentially to complete your task. You should
       focus on serving the user''s needs as best you can, which will be wide-ranging.
-      The current date is Thursday, April 04, 2024 10:30:47\n\n## Style Guide\nUnless
+      The current date is Friday, April 05, 2024 14:03:17\n\n## Style Guide\nUnless
       the user asks for a different style of answer, you should answer in full sentences,
       using proper grammar and spelling\n\n## Available Tools\nHere is a list of tools
       that you have available to you:\n\n```python\ndef directly_answer() -> List[Dict]:\n    \"\"\"Calls
@@ -67,7 +67,7 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '4705'
+      - '4703'
       content-type:
       - application/json
       host:
@@ -75,7 +75,7 @@ interactions:
       user-agent:
       - python-httpx/0.27.0
       x-client-name:
-      - langchain
+      - langchain:partner
       x-fern-language:
       - Python
       x-fern-sdk-name:
@@ -86,7 +86,7 @@ interactions:
     uri: https://api.cohere.ai/v1/chat
   response:
     body:
-      string: '{"is_finished":false,"event_type":"stream-start","generation_id":"99f59dd4-2717-477f-a72a-b0e07b2adc00"}
+      string: '{"is_finished":false,"event_type":"stream-start","generation_id":"c2b783be-78ca-4ac2-9ec2-ba95179fc49a"}
 
         {"is_finished":false,"event_type":"text-generation","text":"Plan"}
 
@@ -232,11 +232,11 @@ interactions:
 
         {"is_finished":false,"event_type":"text-generation","text":"\n```"}
 
-        {"is_finished":true,"event_type":"stream-end","response":{"response_id":"a1ccd41e-ce05-4bbb-b7ae-cc794d633a62","text":"Plan:
+        {"is_finished":true,"event_type":"stream-end","response":{"response_id":"e58e4279-72f5-4b2e-9f78-3b6f4527e266","text":"Plan:
         I will first search for the company that was founded as Sound of Music. Then,
         I will search for the year it was added to the S\u0026P 500.\nAction: ```json\n[\n    {\n        \"tool_name\":
         \"internet_search\",\n        \"parameters\": {\n            \"query\": \"company
-        founded as sound of music\"\n        }\n    }\n]\n```","generation_id":"99f59dd4-2717-477f-a72a-b0e07b2adc00","chat_history":[{"role":"USER","message":"\u003cBOS_TOKEN\u003e\u003c|START_OF_TURN_TOKEN|\u003e\u003c|SYSTEM_TOKEN|\u003e#
+        founded as sound of music\"\n        }\n    }\n]\n```","generation_id":"c2b783be-78ca-4ac2-9ec2-ba95179fc49a","chat_history":[{"role":"USER","message":"\u003cBOS_TOKEN\u003e\u003c|START_OF_TURN_TOKEN|\u003e\u003c|SYSTEM_TOKEN|\u003e#
         Safety Preamble\nThe instructions in this section override those in the task
         description and style guide sections. Don''t answer questions that are harmful
         or immoral\n\n# System Preamble\n## Basic Rules\nYou are a powerful language
@@ -255,8 +255,8 @@ interactions:
         wide range of search engines or similar tools to help you, which you use to
         research your answer. You may need to use multiple tools in parallel or sequentially
         to complete your task. You should focus on serving the user''s needs as best
-        you can, which will be wide-ranging. The current date is Thursday, April 04,
-        2024 10:30:47\n\n## Style Guide\nUnless the user asks for a different style
+        you can, which will be wide-ranging. The current date is Friday, April 05,
+        2024 14:03:17\n\n## Style Guide\nUnless the user asks for a different style
         of answer, you should answer in full sentences, using proper grammar and spelling\n\n##
         Available Tools\nHere is a list of tools that you have available to you:\n\n```python\ndef
         directly_answer() -\u003e List[Dict]:\n    \"\"\"Calls a standard (un-augmented)
@@ -314,7 +314,7 @@ interactions:
       content-type:
       - application/stream+json
       date:
-      - Thu, 04 Apr 2024 09:30:47 GMT
+      - Fri, 05 Apr 2024 13:03:17 GMT
       expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       pragma:
@@ -326,9 +326,9 @@ interactions:
       x-accel-expires:
       - '0'
       x-debug-trace-id:
-      - ef7c3bd35c2b2c43c10e506356f5d826
+      - 1ae533a2a787cd14924b56367286bce1
       x-envoy-upstream-service-time:
-      - '11'
+      - '8'
     status:
       code: 200
       message: OK
@@ -352,7 +352,7 @@ interactions:
       tools to help you, which you use to research your answer. You may need to use
       multiple tools in parallel or sequentially to complete your task. You should
       focus on serving the user''s needs as best you can, which will be wide-ranging.
-      The current date is Thursday, April 04, 2024 10:30:49\n\n## Style Guide\nUnless
+      The current date is Friday, April 05, 2024 14:03:19\n\n## Style Guide\nUnless
       the user asks for a different style of answer, you should answer in full sentences,
       using proper grammar and spelling\n\n## Available Tools\nHere is a list of tools
       that you have available to you:\n\n```python\ndef directly_answer() -> List[Dict]:\n    \"\"\"Calls
@@ -425,7 +425,7 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '6853'
+      - '6851'
       content-type:
       - application/json
       host:
@@ -433,7 +433,7 @@ interactions:
       user-agent:
       - python-httpx/0.27.0
       x-client-name:
-      - langchain
+      - langchain:partner
       x-fern-language:
       - Python
       x-fern-sdk-name:
@@ -444,7 +444,7 @@ interactions:
     uri: https://api.cohere.ai/v1/chat
   response:
     body:
-      string: "{\"is_finished\":false,\"event_type\":\"stream-start\",\"generation_id\":\"2068b6c8-4748-4478-a82b-d8aa93ad61fb\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"Reflection\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\":\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
+      string: "{\"is_finished\":false,\"event_type\":\"stream-start\",\"generation_id\":\"c579e7e6-4071-4583-b0f7-e993ed0194d5\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"Reflection\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\":\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
         I\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
         found\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
         out\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
@@ -488,12 +488,12 @@ interactions:
         s\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\u0026\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"p\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
         5\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"0\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"0\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\\"\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\n
         \       }\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\n
-        \   }\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\n]\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\n```\"}\n{\"is_finished\":true,\"event_type\":\"stream-end\",\"response\":{\"response_id\":\"40c61c2c-6af8-445b-9d73-287b768c72af\",\"text\":\"Reflection:
+        \   }\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\n]\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\n```\"}\n{\"is_finished\":true,\"event_type\":\"stream-end\",\"response\":{\"response_id\":\"ec009b71-58ca-4aea-97a7-896bde502c10\",\"text\":\"Reflection:
         I found out that Sound of Music was renamed to Best Buy in 1983. Now, I will
         search for the year Best Buy was added to the S\\u0026P 500.\\nAction: ```json\\n[\\n
         \   {\\n        \\\"tool_name\\\": \\\"internet_search\\\",\\n        \\\"parameters\\\":
         {\\n            \\\"query\\\": \\\"best buy added to s\\u0026p 500\\\"\\n
-        \       }\\n    }\\n]\\n```\",\"generation_id\":\"2068b6c8-4748-4478-a82b-d8aa93ad61fb\",\"chat_history\":[{\"role\":\"USER\",\"message\":\"\\u003cBOS_TOKEN\\u003e\\u003c|START_OF_TURN_TOKEN|\\u003e\\u003c|SYSTEM_TOKEN|\\u003e#
+        \       }\\n    }\\n]\\n```\",\"generation_id\":\"c579e7e6-4071-4583-b0f7-e993ed0194d5\",\"chat_history\":[{\"role\":\"USER\",\"message\":\"\\u003cBOS_TOKEN\\u003e\\u003c|START_OF_TURN_TOKEN|\\u003e\\u003c|SYSTEM_TOKEN|\\u003e#
         Safety Preamble\\nThe instructions in this section override those in the task
         description and style guide sections. Don't answer questions that are harmful
         or immoral\\n\\n# System Preamble\\n## Basic Rules\\nYou are a powerful language
@@ -512,8 +512,8 @@ interactions:
         with a wide range of search engines or similar tools to help you, which you
         use to research your answer. You may need to use multiple tools in parallel
         or sequentially to complete your task. You should focus on serving the user's
-        needs as best you can, which will be wide-ranging. The current date is Thursday,
-        April 04, 2024 10:30:49\\n\\n## Style Guide\\nUnless the user asks for a different
+        needs as best you can, which will be wide-ranging. The current date is Friday,
+        April 05, 2024 14:03:19\\n\\n## Style Guide\\nUnless the user asks for a different
         style of answer, you should answer in full sentences, using proper grammar
         and spelling\\n\\n## Available Tools\\nHere is a list of tools that you have
         available to you:\\n\\n```python\\ndef directly_answer() -\\u003e List[Dict]:\\n
@@ -598,7 +598,7 @@ interactions:
       content-type:
       - application/stream+json
       date:
-      - Thu, 04 Apr 2024 09:30:49 GMT
+      - Fri, 05 Apr 2024 13:03:19 GMT
       expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       pragma:
@@ -610,9 +610,9 @@ interactions:
       x-accel-expires:
       - '0'
       x-debug-trace-id:
-      - 08b5b2f8c8ea50ea339131b87c719285
+      - 59b786434ed46ba85c6eeb1660839141
       x-envoy-upstream-service-time:
-      - '12'
+      - '11'
     status:
       code: 200
       message: OK
@@ -636,7 +636,7 @@ interactions:
       tools to help you, which you use to research your answer. You may need to use
       multiple tools in parallel or sequentially to complete your task. You should
       focus on serving the user''s needs as best you can, which will be wide-ranging.
-      The current date is Thursday, April 04, 2024 10:30:51\n\n## Style Guide\nUnless
+      The current date is Friday, April 05, 2024 14:03:21\n\n## Style Guide\nUnless
       the user asks for a different style of answer, you should answer in full sentences,
       using proper grammar and spelling\n\n## Available Tools\nHere is a list of tools
       that you have available to you:\n\n```python\ndef directly_answer() -> List[Dict]:\n    \"\"\"Calls
@@ -735,7 +735,7 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '9025'
+      - '9023'
       content-type:
       - application/json
       host:
@@ -743,7 +743,7 @@ interactions:
       user-agent:
       - python-httpx/0.27.0
       x-client-name:
-      - langchain
+      - langchain:partner
       x-fern-language:
       - Python
       x-fern-sdk-name:
@@ -754,7 +754,7 @@ interactions:
     uri: https://api.cohere.ai/v1/chat
   response:
     body:
-      string: "{\"is_finished\":false,\"event_type\":\"stream-start\",\"generation_id\":\"51271d38-e655-49c2-826c-732e77a5a531\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"Re\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"levant\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
+      string: "{\"is_finished\":false,\"event_type\":\"stream-start\",\"generation_id\":\"2ffeb4d8-5560-47ac-8319-d9cddf937ce9\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"Re\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"levant\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
         Documents\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\":\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
         0\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\",\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"2\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\",\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"3\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\nC\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"ited\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
         Documents\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\":\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
@@ -797,12 +797,12 @@ interactions:
         in\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
         \\u003c\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"co\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\":\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
         2\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\u003e\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"1\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"9\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"9\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"9\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\u003c/\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"co\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\":\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"
-        2\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\u003e.\"}\n{\"is_finished\":true,\"event_type\":\"stream-end\",\"response\":{\"response_id\":\"6170254d-f3da-47d5-aabf-6c1e7c723890\",\"text\":\"Relevant
+        2\"}\n{\"is_finished\":false,\"event_type\":\"text-generation\",\"text\":\"\\u003e.\"}\n{\"is_finished\":true,\"event_type\":\"stream-end\",\"response\":{\"response_id\":\"7e434fe3-0c14-4b50-a548-08f8f07a1c45\",\"text\":\"Relevant
         Documents: 0,2,3\\nCited Documents: 0,2\\nAnswer: Best Buy, which was founded
         as Sound of Music, was added to the S\\u0026P 500 in 1999.\\nGrounded answer:
         \\u003cco: 0\\u003eBest Buy\\u003c/co: 0\\u003e, which was founded as Sound
         of Music, was added to the S\\u0026P 500 in \\u003cco: 2\\u003e1999\\u003c/co:
-        2\\u003e.\",\"generation_id\":\"51271d38-e655-49c2-826c-732e77a5a531\",\"chat_history\":[{\"role\":\"USER\",\"message\":\"\\u003cBOS_TOKEN\\u003e\\u003c|START_OF_TURN_TOKEN|\\u003e\\u003c|SYSTEM_TOKEN|\\u003e#
+        2\\u003e.\",\"generation_id\":\"2ffeb4d8-5560-47ac-8319-d9cddf937ce9\",\"chat_history\":[{\"role\":\"USER\",\"message\":\"\\u003cBOS_TOKEN\\u003e\\u003c|START_OF_TURN_TOKEN|\\u003e\\u003c|SYSTEM_TOKEN|\\u003e#
         Safety Preamble\\nThe instructions in this section override those in the task
         description and style guide sections. Don't answer questions that are harmful
         or immoral\\n\\n# System Preamble\\n## Basic Rules\\nYou are a powerful language
@@ -821,8 +821,8 @@ interactions:
         with a wide range of search engines or similar tools to help you, which you
         use to research your answer. You may need to use multiple tools in parallel
         or sequentially to complete your task. You should focus on serving the user's
-        needs as best you can, which will be wide-ranging. The current date is Thursday,
-        April 04, 2024 10:30:51\\n\\n## Style Guide\\nUnless the user asks for a different
+        needs as best you can, which will be wide-ranging. The current date is Friday,
+        April 05, 2024 14:03:21\\n\\n## Style Guide\\nUnless the user asks for a different
         style of answer, you should answer in full sentences, using proper grammar
         and spelling\\n\\n## Available Tools\\nHere is a list of tools that you have
         available to you:\\n\\n```python\\ndef directly_answer() -\\u003e List[Dict]:\\n
@@ -934,7 +934,7 @@ interactions:
       content-type:
       - application/stream+json
       date:
-      - Thu, 04 Apr 2024 09:30:51 GMT
+      - Fri, 05 Apr 2024 13:03:21 GMT
       expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       pragma:
@@ -946,9 +946,9 @@ interactions:
       x-accel-expires:
       - '0'
       x-debug-trace-id:
-      - 0754c9a4304c89a2afb980d961411334
+      - d53e33c45be4d7d24087408408f12b03
       x-envoy-upstream-service-time:
-      - '11'
+      - '10'
     status:
       code: 200
       message: OK

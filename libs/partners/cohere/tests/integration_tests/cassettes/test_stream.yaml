@@ -17,7 +17,7 @@ interactions:
       user-agent:
       - python-httpx/0.27.0
       x-client-name:
-      - langchain
+      - langchain:partner
       x-fern-language:
       - Python
       x-fern-sdk-name:
@@ -28,149 +28,36 @@ interactions:
     uri: https://api.cohere.ai/v1/chat
   response:
     body:
-      string: '{"is_finished":false,"event_type":"stream-start","generation_id":"ab4b86fd-63f7-4598-abdf-d6a3142578ba"}
+      string: '{"is_finished":false,"event_type":"stream-start","generation_id":"0cce34e3-19c9-4b8e-9d87-1ead3fdcda44"}
 
-        {"is_finished":false,"event_type":"text-generation","text":"You"}
+        {"is_finished":false,"event_type":"text-generation","text":"Wow"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" seem"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" to"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" be"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" referencing"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" the"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" popular"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" animated"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" series"}
-
-        {"is_finished":false,"event_type":"text-generation","text":","}
-
-        {"is_finished":false,"event_type":"text-generation","text":" \""}
-
-        {"is_finished":false,"event_type":"text-generation","text":"Rick"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" and"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" Mort"}
-
-        {"is_finished":false,"event_type":"text-generation","text":"y"}
-
-        {"is_finished":false,"event_type":"text-generation","text":".\""}
-
-        {"is_finished":false,"event_type":"text-generation","text":" In"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" the"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" episode"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" \""}
-
-        {"is_finished":false,"event_type":"text-generation","text":"Pick"}
-
-        {"is_finished":false,"event_type":"text-generation","text":"le"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" Rick"}
-
-        {"is_finished":false,"event_type":"text-generation","text":",\""}
-
-        {"is_finished":false,"event_type":"text-generation","text":" the"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" main"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" character"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" Rick"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" Sanchez"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" turns"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" himself"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" into"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" a"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" pickle"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" to"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" avoid"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" family"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" therapy"}
-
-        {"is_finished":false,"event_type":"text-generation","text":"."}
+        {"is_finished":false,"event_type":"text-generation","text":"!"}
 
         {"is_finished":false,"event_type":"text-generation","text":" It"}
 
         {"is_finished":false,"event_type":"text-generation","text":"''s"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" a"}
+        {"is_finished":false,"event_type":"text-generation","text":" Pickle"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" memorable"}
+        {"is_finished":false,"event_type":"text-generation","text":" Rick"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" and"}
+        {"is_finished":false,"event_type":"text-generation","text":"!"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" humorous"}
+        {"is_finished":false,"event_type":"text-generation","text":" What"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" episode"}
+        {"is_finished":false,"event_type":"text-generation","text":" brings"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" that"}
+        {"is_finished":false,"event_type":"text-generation","text":" you"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" has"}
+        {"is_finished":false,"event_type":"text-generation","text":" here"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" gained"}
+        {"is_finished":false,"event_type":"text-generation","text":"?"}
 
-        {"is_finished":false,"event_type":"text-generation","text":" a"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" lot"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" of"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" popularity"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" and"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" has"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" even"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" inspired"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" various"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" memes"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" and"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" references"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" in"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" popular"}
-
-        {"is_finished":false,"event_type":"text-generation","text":" culture"}
-
-        {"is_finished":false,"event_type":"text-generation","text":"."}
-
-        {"is_finished":true,"event_type":"stream-end","response":{"response_id":"7487e9b6-f886-4dba-98b2-e24da5c767cf","text":"You
-        seem to be referencing the popular animated series, \"Rick and Morty.\" In
-        the episode \"Pickle Rick,\" the main character Rick Sanchez turns himself
-        into a pickle to avoid family therapy. It''s a memorable and humorous episode
-        that has gained a lot of popularity and has even inspired various memes and
-        references in popular culture.","generation_id":"ab4b86fd-63f7-4598-abdf-d6a3142578ba","chat_history":[{"role":"USER","message":"I''m
-        Pickle Rick"},{"role":"CHATBOT","message":"You seem to be referencing the
-        popular animated series, \"Rick and Morty.\" In the episode \"Pickle Rick,\"
-        the main character Rick Sanchez turns himself into a pickle to avoid family
-        therapy. It''s a memorable and humorous episode that has gained a lot of popularity
-        and has even inspired various memes and references in popular culture."}],"token_count":{"prompt_tokens":70,"response_tokens":65,"total_tokens":135,"billed_tokens":69},"meta":{"api_version":{"version":"1"},"billed_units":{"input_tokens":4,"output_tokens":65}}},"finish_reason":"COMPLETE"}
+        {"is_finished":true,"event_type":"stream-end","response":{"response_id":"4f9fc58f-cc58-41a4-8bf0-ed56d5a5d0cb","text":"Wow!
+        It''s Pickle Rick! What brings you here?","generation_id":"0cce34e3-19c9-4b8e-9d87-1ead3fdcda44","chat_history":[{"role":"USER","message":"I''m
+        Pickle Rick"},{"role":"CHATBOT","message":"Wow! It''s Pickle Rick! What brings
+        you here?"}],"token_count":{"prompt_tokens":70,"response_tokens":12,"total_tokens":82,"billed_tokens":16},"meta":{"api_version":{"version":"1"},"billed_units":{"input_tokens":4,"output_tokens":12}}},"finish_reason":"COMPLETE"}
 
         '
     headers:
@@ -187,7 +74,7 @@ interactions:
       content-type:
       - application/stream+json
       date:
-      - Fri, 05 Apr 2024 09:31:35 GMT
+      - Fri, 05 Apr 2024 13:02:56 GMT
       expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       pragma:
@@ -199,9 +86,9 @@ interactions:
       x-accel-expires:
       - '0'
       x-debug-trace-id:
-      - 2b3190809e9b884876c6ae160b8bb53a
+      - 0a800a2b9dd888346fe13a57dffa4551
       x-envoy-upstream-service-time:
-      - '57'
+      - '75'
     status:
       code: 200
       message: OK

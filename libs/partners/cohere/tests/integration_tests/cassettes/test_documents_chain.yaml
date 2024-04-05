@@ -19,7 +19,7 @@ interactions:
       user-agent:
       - python-httpx/0.27.0
       x-client-name:
-      - langchain
+      - langchain:partner
       x-fern-language:
       - Python
       x-fern-sdk-name:
@@ -30,10 +30,10 @@ interactions:
     uri: https://api.cohere.ai/v1/chat
   response:
     body:
-      string: '{"response_id":"1be23ba0-9a91-4eea-918b-c548cd1520bc","text":"The sky
-        is green.","generation_id":"17b55393-b587-4169-b4e5-e0caefbff1b3","chat_history":[{"role":"USER","message":"What
+      string: '{"response_id":"cc5f9d14-24ac-4fb6-ac0d-a7eccd18eae3","text":"The sky
+        is green.","generation_id":"6a9a382b-d966-4634-8cf3-23ebab59d733","chat_history":[{"role":"USER","message":"What
         color is the sky?"},{"role":"CHATBOT","message":"The sky is green."}],"finish_reason":"COMPLETE","token_count":{"prompt_tokens":690,"search_query_tokens":5,"response_tokens":10,"total_tokens":700,"billed_tokens":23},"meta":{"api_version":{"version":"1"},"billed_units":{"input_tokens":13,"output_tokens":10}},"citations":[{"start":11,"end":17,"text":"green.","document_ids":["doc-0"]}],"documents":[{"id":"doc-0","text":"The
-        sky is green."}],"search_queries":[{"text":"what color is the sky","generation_id":"826035c6-c57f-47b5-bda3-515d8ee55eda"}]}'
+        sky is green."}],"search_queries":[{"text":"what color is the sky","generation_id":"d7c905a2-4ef2-46ac-850f-092df41bee28"}]}'
     headers:
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -48,7 +48,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Fri, 05 Apr 2024 10:31:09 GMT
+      - Fri, 05 Apr 2024 13:03:17 GMT
       expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       num_chars:
@@ -64,9 +64,9 @@ interactions:
       x-accel-expires:
       - '0'
       x-debug-trace-id:
-      - 6296115b3c7d5a3f79d8ea7cc28b53da
+      - 561604a75dd0d177291a0866cf50522c
       x-envoy-upstream-service-time:
-      - '1232'
+      - '1138'
     status:
       code: 200
       message: OK

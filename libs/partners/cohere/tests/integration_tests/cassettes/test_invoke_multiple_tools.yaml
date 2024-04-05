@@ -1,8 +1,12 @@
 interactions:
 - request:
-    body: '{"query": "Test query", "documents": ["This is a test document.", "Another
-      test document."], "model": "rerank-english-v2.0", "top_n": 3, "max_chunks_per_doc":
-      null}'
+    body: '{"message": "What is the capital of France", "stream": false, "chat_history":
+      [], "temperature": 0.0, "tools": [{"name": "add_two_numbers", "description":
+      "Add two numbers together", "parameter_definitions": {"a": {"description": "",
+      "type": "int", "required": true}, "b": {"description": "", "type": "int", "required":
+      true}}}, {"name": "capital_cities", "description": "Returns the capital city
+      of a country", "parameter_definitions": {"country": {"description": "", "type":
+      "str", "required": true}}}]}'
     headers:
       accept:
       - '*/*'
@@ -11,7 +15,7 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '164'
+      - '505'
       content-type:
       - application/json
       host:
@@ -27,15 +31,15 @@ interactions:
       x-fern-sdk-version:
       - 5.1.7
     method: POST
-    uri: https://api.cohere.ai/v1/rerank
+    uri: https://api.cohere.ai/v1/chat
   response:
     body:
-      string: '{"id":"7a47a2b7-3c80-4a5a-ba18-2ad0b9ec120b","results":[{"index":0,"relevance_score":0.022759156},{"index":1,"relevance_score":0.012576348}],"meta":{"api_version":{"version":"1"},"billed_units":{"search_units":1}}}'
+      string: '{"response_id":"b5f181c6-8aa5-450d-8851-2f44c6e9c1d3","text":"","generation_id":"e5f7fb57-4deb-4de0-a41b-e4b416b1cdb5","chat_history":[],"finish_reason":"COMPLETE","meta":{"api_version":{"version":"1"},"billed_units":{"input_tokens":28,"output_tokens":8}},"tool_calls":[{"name":"capital_cities","parameters":{"country":"France"}}]}'
     headers:
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
       Content-Length:
-      - '214'
+      - '331'
       Via:
       - 1.1 google
       access-control-expose-headers:
@@ -45,9 +49,11 @@ interactions:
       content-type:
       - application/json
       date:
-      - Fri, 05 Apr 2024 13:13:39 GMT
+      - Fri, 05 Apr 2024 13:03:05 GMT
       expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
+      num_tokens:
+      - '36'
       pragma:
       - no-cache
       server:
@@ -57,9 +63,9 @@ interactions:
       x-accel-expires:
       - '0'
       x-debug-trace-id:
-      - a1a936215f18033a32d077db6ff8329a
+      - 65893c2d36a066c79d1cc30d92c2bfe4
       x-envoy-upstream-service-time:
-      - '31'
+      - '856'
     status:
       code: 200
       message: OK

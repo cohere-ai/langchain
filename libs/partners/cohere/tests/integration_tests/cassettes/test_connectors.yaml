@@ -19,7 +19,7 @@ interactions:
       user-agent:
       - python-httpx/0.27.0
       x-client-name:
-      - langchain
+      - langchain:partner
       x-fern-language:
       - Python
       x-fern-sdk-name:
@@ -30,8 +30,8 @@ interactions:
     uri: https://api.cohere.ai/v1/chat
   response:
     body:
-      string: "{\"response_id\":\"9352772b-46a5-4ae2-be86-4dcb0d6516d6\",\"text\":\"Denis
-        Villeneuve\",\"generation_id\":\"fd621d7e-240f-46ff-af81-7ae69f8b5d49\",\"chat_history\":[{\"role\":\"USER\",\"message\":\"Who
+      string: "{\"response_id\":\"affc10db-31af-479c-9935-a1ee50deec40\",\"text\":\"Denis
+        Villeneuve\",\"generation_id\":\"d4e02cb2-e4ef-42e7-a34a-27793cd49cd9\",\"chat_history\":[{\"role\":\"USER\",\"message\":\"Who
         directed dune two? reply with just the name.\"},{\"role\":\"CHATBOT\",\"message\":\"Denis
         Villeneuve\"}],\"finish_reason\":\"COMPLETE\",\"token_count\":{\"prompt_tokens\":19783,\"search_query_tokens\":5,\"response_tokens\":7,\"total_tokens\":19790,\"billed_tokens\":19050},\"meta\":{\"api_version\":{\"version\":\"1\"},\"billed_units\":{\"input_tokens\":19043,\"output_tokens\":7}},\"citations\":[{\"start\":0,\"end\":16,\"text\":\"Denis
         Villeneuve\",\"document_ids\":[\"web-search_2\",\"web-search_3\",\"web-search_4\",\"web-search_5\",\"web-search_6\",\"web-search_8\",\"web-search_9\"]}],\"documents\":[{\"id\":\"web-search_2\",\"snippet\":\"Dune:
@@ -1048,8 +1048,8 @@ interactions:
         at your organization. Please log in. For assistance, contact your corporate
         administrator.\",\"timestamp\":\"2024-04-05T00:03:10\",\"title\":\"Denis Villeneuve
         and Legendary Developing 'Dune 3' and 'Nuclear War: A Scenario' Film Adaptation\",\"url\":\"https://variety.com/2024/film/news/dune-3-denis-villeneuve-legendary-nuclear-war-1235960990/\"}],\"search_results\":[{\"search_query\":{\"text\":\"dune
-        2 director\",\"generation_id\":\"9a5eccc5-ccaf-4d2c-aee5-98183f1d850a\"},\"document_ids\":[\"web-search_2\",\"web-search_3\",\"web-search_4\",\"web-search_5\",\"web-search_6\",\"web-search_8\",\"web-search_9\"],\"connector\":{\"id\":\"web-search\"}}],\"search_queries\":[{\"text\":\"dune
-        2 director\",\"generation_id\":\"9a5eccc5-ccaf-4d2c-aee5-98183f1d850a\"}]}"
+        2 director\",\"generation_id\":\"dfccd6f9-efb9-4d69-a0be-fffad272ad4e\"},\"document_ids\":[\"web-search_2\",\"web-search_3\",\"web-search_4\",\"web-search_5\",\"web-search_6\",\"web-search_8\",\"web-search_9\"],\"connector\":{\"id\":\"web-search\"}}],\"search_queries\":[{\"text\":\"dune
+        2 director\",\"generation_id\":\"dfccd6f9-efb9-4d69-a0be-fffad272ad4e\"}]}"
     headers:
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -1064,7 +1064,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Fri, 05 Apr 2024 10:31:06 GMT
+      - Fri, 05 Apr 2024 13:03:14 GMT
       expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       num_chars:
@@ -1080,9 +1080,9 @@ interactions:
       x-accel-expires:
       - '0'
       x-debug-trace-id:
-      - d0439b5e92105cba2bde5ba6ff8edd11
+      - 293c425505538d85bb152ac0a611458a
       x-envoy-upstream-service-time:
-      - '7023'
+      - '7801'
     status:
       code: 200
       message: OK
